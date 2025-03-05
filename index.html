@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakesy - Powdered Perfection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #E6F2F0;
+            overflow-x: hidden;
+        }
+        .blob-bg {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="bg-[#E6F2F0] text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <img src="../assests/Shakesy Logo ARTWORK-04.png" alt="Shakesy Logo" class="h-10">
+            <div class="space-x-6">
+                <a href="#products" class="hover:text-purple-600 transition">Products</a>
+                <a href="#about" class="hover:text-purple-600 transition">About Us</a>
+                <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center relative overflow-hidden">
+        <div class="blob-bg top-0 left-0 w-full h-full bg-purple-200/30"></div>
+        <div class="container mx-auto px-4 grid md:grid-cols-2 items-center gap-10 pt-20">
+            <div class="space-y-6">
+                <h1 class="text-5xl font-bold leading-tight">Indulge in Delicious Milkshakes</h1>
+                <p class="text-xl text-gray-600">Discover the perfect blend of creaminess and flavor in our milkshakes, made with the freshest ingredients for kids and adults alike.</p>
+                <button class="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition">Order Now!</button>
+            </div>
+            <div class="flex justify-center relative">
+                <img src="../assests/Shakesy Logo ARTWORK-02.png" alt="Shakesy Mascot" class="z-10 relative hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+    </header>
+
+    <!-- Flavors Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Endless Flavors</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-gray-100 p-6 rounded-lg text-center hover:shadow-xl transition">
+                    <img src="../assests/choco.jpg" alt="Chocolate Smoothie" class="mx-auto mb-4">
+                    <h3 class="font-semibold">Chocolate Smoothie</h3>
+                    <button class="mt-4 bg-purple-500 text-white px-6 py-2 rounded-full">Order Now</button>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center hover:shadow-xl transition">
+                    <img src="../assests/vanilla.jpeg" alt="Rich Vanilla" class="mx-auto mb-4">
+                    <h3 class="font-semibold">Rich Vanilla</h3>
+                    <button class="mt-4 bg-purple-500 text-white px-6 py-2 rounded-full">Order Now</button>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center hover:shadow-xl transition">
+                    <img src="/api/placeholder/250/250" alt="Strawberry Dream" class="mx-auto mb-4">
+                    <h3 class="font-semibold">Strawberry Dream</h3>
+                    <button class="mt-4 bg-purple-500 text-white px-6 py-2 rounded-full">Order Now</button>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center hover:shadow-xl transition">
+                    <img src="/api/placeholder/250/250" alt="Caramel Crush" class="mx-auto mb-4">
+                    <h3 class="font-semibold">Caramel Crush</h3>
+                    <button class="mt-4 bg-purple-500 text-white px-6 py-2 rounded-full">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12">Our Customers Love It As Much As We Do</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
+                    <p>"Sweet, mixes well. Tastes absolutely delicious! Especially when you add frozen raspberries."</p>
+                    <p class="mt-4 font-semibold">- Asif</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-yellow-400 text-2xl mb-4">★★★★☆</div>
+                    <p>"Sweet, mixes well. Tastes absolutely delicious! Especially when you add frozen raspberries."</p>
+                    <p class="mt-4 font-semibold">- Pandyan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-900 text-white py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-10">
+            <div>
+                <h3 class="font-bold text-xl mb-4">Company</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-purple-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-purple-300">Our Story</a></li>
+                    <li><a href="#" class="hover:text-purple-300">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl mb-4">Resources</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-purple-300">FAQs</a></li>
+                    <li><a href="#" class="hover:text-purple-300">Blog</a></li>
+                    <li><a href="#" class="hover:text-purple-300">Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl mb-4">Follow Us</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-purple-300">Instagram</a></li>
+                    <li><a href="#" class="hover:text-purple-300">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-purple-300">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-10 border-t border-purple-700 pt-6">
+            © 2024 Shakesy Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Section Animation
+        gsap.from('.hero-content', {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: 'power3.out'
+        });
+
+        // Products Section Animation
+        gsap.from('.products-grid > div', {
+            scrollTrigger: {
+                trigger: '#products',
+                start: 'top 80%'
+            },
+            opacity: 0,
+            y: 50,
+            stagger: 0.2,
+            duration: 0.8
+        });
+
+        // Blob Background Animation
+        gsap.to('.blob-bg', {
+            x: 100,
+            y: 50,
+            rotation: 45,
+            duration: 10,
+            repeat: -1,
+            yoyo: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* main.css */
+:root {
+    --color-primary: #d8af13;
+    --color-primary-dark: #000000;
+    --color-secondary: #6B7280;
+    --color-text: #1F2937;
+    --color-background: #ffffff;
+    --color-gray-light: #F3F4F6;
+    --font-primary: 'Inter', sans-serif;
+    --transition: all 0.3s ease;
+  }
+  
+  /* Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-overflow:ellipsis;
+    
+  }
